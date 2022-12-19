@@ -14,7 +14,7 @@ hbs.registerPartials(__dirname + "/views/partials", function (err) {});
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("Home", {
+  res.render("home", {
     titulo: "Curso de Node",
     nombre: "Jaime Sanchez",
   });
